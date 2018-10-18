@@ -1,0 +1,22 @@
+<!-- loading请求提示框 -->
+<template name="sysLoading">
+  <loading wx:if="{{loadState}}">{{loadTitle}}</loading>
+</template>
+
+<!-- 连体按钮 -->
+<template name="sysConjoinButton">
+  <view class='SysConjoinButton'>
+    <button wx:for="{{BtnNames}}" wx:key="index" wx:for-item="BtnName">{{BtnName}}</button>
+  </view>
+</template>
+
+
+<!-- 记账的iconfont按钮 -->
+<template name="sysIconFont">
+  <view class='SysIconFont'>
+    <button>
+      <text class='iconfont {{IconFont}}'></text>
+    </button>
+    <text>{{Name}}</text>
+  </view>
+</template>

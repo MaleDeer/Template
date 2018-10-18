@@ -1,0 +1,72 @@
+@import "../../pages/template/system/system.wxss";
+
+.UserInfo {
+  position: relative;
+  width: 750rpx;
+  height: 320rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+}
+
+.UserinfoAvatar {
+  overflow: hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.AuthorizedMsg {
+  margin: 10%;
+}
+
+/* 分割线 */
+
+.Tiekuorg {
+  background: #e0e3da;
+  width: 100%;
+  height: 3rpx;
+}
+
+.Title {
+  margin-top: 100rpx;
+  font-size: 40rpx;
+}
+
+.Openly {
+  margin-top: 60rpx;
+  font-size: 26rpx;
+  color: #9e9e9e;
+}
+
+.AuthorizedBtn {
+  margin-top: 60rpx;
+  color: #fff;
+  background-color: #4b0;
+}
+
+.LowVersion {
+  margin-top: 60rpx;
+  text-align: center;
+}
+
+.AwaitInterval {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.AwaitImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "removeComments": true,
+        "allowJs": true,
+        "lib": [
+            "scripthost",
+            "dom",
+            "es5"
+        ],
+        "experimentalDecorators": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "skipLibCheck": true,
+        "noEmitHelpers": false,
+        "watch": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "dist"
+    ]
+}

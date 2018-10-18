@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/load/index",
+    "pages/index/index",
+    "pages/accounts/record"
+  ],
+  "window": {
+    "backgroundColor": "#FCFBFC",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FCFBFC",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

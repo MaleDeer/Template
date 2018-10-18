@@ -1,0 +1,25 @@
+<import src="../../pages/template/system/system.wxml" />
+
+<!--index.wxml-->
+<view wx:if="{{Authorized}}">
+  <template is="sysLoading" data="{{loadState:true, loadTitle:'加载中...'}}"></template>
+  <image class='AwaitImg' src='../../Images/System/Kenka_1.jpg'></image>
+</view>
+<view class='AwaitInterval' wx:else>
+  <view class='UserInfo'>
+    <view class="UserinfoAvatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName"></open-data>
+  </view>
+  <view class='AuthorizedMsg'>
+    <view class="Tiekuorg"></view>
+    <view wx:if="{{canIUse}}">
+      <view class='Title'>申请获取以下权限</view>
+      <view class='Openly'>获取你的公开信息（昵称,头像等）</view>
+      <!-- 需要使用 button 来授权登录 -->
+      <button class='AuthorizedBtn' open-type="getUserInfo" lang='zh_CN' bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    </view>
+    <view class='LowVersion' wx:else>请升级微信版本</view>
+  </view>
+</view>
