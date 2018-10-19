@@ -69,16 +69,6 @@ var IndexPage = (function (_super) {
             return [2];
         }); });
     };
-    IndexPage.prototype.bindNavigateRecord = function (option) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                wx.navigateTo({
-                    url: "../accounts/record"
-                });
-                return [2];
-            });
-        });
-    };
     return IndexPage;
 }(EntitysBase_1.Wx_Page));
 Page(new IndexPage());

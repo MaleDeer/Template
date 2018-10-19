@@ -5,6 +5,4 @@
   <view>
     <template is="sysConjoinButton" data="{{BtnNames:['支出','收入','其他']}}"></template>
   </view>
-
-
 </view>

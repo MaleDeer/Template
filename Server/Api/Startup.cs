@@ -84,7 +84,6 @@ namespace Api
                         Url = "https://example.com/license"
                     }
                 });
-
                 //设置Swagger JSON和UI的注释路径。
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);

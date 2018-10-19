@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Controllers.BaseController">
+            <summary>
+            控制器基类
+            </summary>
+        </member>
+        <member name="F:Api.Controllers.BaseController._protector">
+            <summary>
+            数据保护
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.BaseController.#ctor(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider)">
+            <summary>
+            提供数据保护
+            </summary>
+            <param name="provider">数据保护提供者</param>
+        </member>
+        <member name="M:Api.Controllers.BaseController.OutData">
+            <summary>
+            正确返回（同步无数据）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController.OutDataAsync">
+            <summary>
+            正确返回（异步无数据）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController.OutData``1(``0)">
+            <summary>
+            正确返回（同步有数据）
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="Data">数据</param>
+            <returns></returns>custom
+        </member>
+        <member name="M:Api.Controllers.BaseController.OutDataAsync``1(``0)">
+            <summary>
+            正确返回（异步有数据）
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController.OutError``1(System.String)">
+            <summary>
+            错误返回（同步）
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController.OutErrorAsync``1(System.String)">
+            <summary>
+            错误返回（异步）
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.TemplateController">
+            <summary>
+            微信控制器
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.#ctor(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider)">
+            <summary>
+            提供数据保护
+            </summary>
+            <param name="provider">数据保护提供者</param>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.InsertUser(Model.Entitys.TUser)">
+            <summary>
+            用户的信息更新
+            </summary>
+            <param name="user">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.DeleteUserById(System.String)">
+            <summary>
+            删除用户信息
+            </summary>
+            <param name="encryptId">用户信息Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.UpdateUser(Model.Entitys.TUser)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.QueryUserById(System.String)">
+            <summary>
+            查询用户信息
+            </summary>
+            <param name="encryptId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.InsertUserPassWord(Model.Entitys.TUserPassWord)">
+            <summary>
+            插入用户密码
+            </summary>
+            <param name="userPassWord">用户密码信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.DeleteUserPassWordById(System.String)">
+            <summary>
+            删除用户密码
+            </summary>
+            <param name="encryptId">用户密码Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.UpdateUserPassWord(Model.Entitys.TUserPassWord)">
+            <summary>
+            更新用户数据
+            </summary>
+            <param name="userPassWord">用户密码信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.QueryUserPassWordById(System.String)">
+            <summary>
+            查询用户密码
+            </summary>
+            <param name="encryptId">用户密码Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TemplateController.QueryUserPassWordPaging(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            查询用户密码
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="pageIndex">当前页码</param>
+            <param name="pageSize">页面大小</param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.WeChatController">
+            <summary>
+            微信控制器
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.WeChatController.#ctor(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider)">
+            <summary>
+            提供数据保护
+            </summary>
+            <param name="provider">数据保护提供者</param>
+        </member>
+        <member name="M:Api.Controllers.WeChatController.GetWxUserIdentity(System.String)">
+            <summary>
+            获取用户凭证
+            </summary>
+            <param name="code">临时登录凭证code</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.WeChatController.Wx_UserLogin(System.String,System.String)">
+            <summary>
+            微信用户登录
+            </summary>
+            <param name="code">临时登录凭证code</param>
+            <param name="fullUserInfoStr">微信用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Program">
+            <summary>
+            程序
+            </summary>
+        </member>
+        <member name="M:Api.Program.Main(System.String[])">
+            <summary>
+            程序入口    
+            </summary>
+            <param name="args">参数</param>
+        </member>
+        <member name="M:Api.Program.BuildWebHost(System.String[])">
+            <summary>
+            创建Web主机
+            </summary>
+            <param name="args">参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Startup">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="M:Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            启动
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Api.Startup.Configuration">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="M:Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            此方法由运行时调用,使用此方法向容器添加服务
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            此方法由运行时调用,使用此方法配置HTTP请求管道
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

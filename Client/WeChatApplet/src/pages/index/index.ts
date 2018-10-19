@@ -40,17 +40,6 @@ class IndexPage extends Wx_Page {
    * @memberof IndexPage
    */
   public async onLoad(options: any) {}
-
-  /**
-   * 跳转到记账页面
-   * @param {*} option
-   * @memberof IndexPage
-   */
-  public async bindNavigateRecord(option: any) {
-    wx.navigateTo({
-      url: "../accounts/record"
-    });
-  }
 }
 
 // 注册页面
