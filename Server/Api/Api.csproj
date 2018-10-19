@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>E:\_Project\Template\Api\Api.xml</DocumentationFile>
+    <DocumentationFile>E:\_Project\Template\Server\Api\Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
